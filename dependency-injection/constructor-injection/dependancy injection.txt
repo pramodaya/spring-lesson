@@ -1,0 +1,17 @@
+2 type of injections.
+ 1.constructor injections
+ 2.setter injection
+ 3.auto wiring (used annotations)
+
+
+steps..
+ 1)Make a 'FortuneService' Interface
+ 2)Make 'HappyFortuneService' by implementing 'FortuneService'
+ 3)Write a method in that class
+ 4)IN BaseBallCoach class
+	1. define a private field for the dependency
+	2.define a constructor for dependency injection
+	3.use the dependency to call 'getFortune'
+ 5)configure dependency file in cofiguration file(applicationContext.xml)
+	1. make bean with "HappyFortune" class
+	2. do the constructor injection inside the baseball-bean-xml
